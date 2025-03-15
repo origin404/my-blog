@@ -11,16 +11,21 @@
 
 nav:
   # Navigation bar logo image
-  logo:
+  logo: https://avatars.githubusercontent.com/u/183532131?v=4
   display_title: true
   # Whether to fix navigation bar
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  Home: / || fas fa-home
+  Archives: /archives/ || fas fa-archive
+  Tags: tags/ || fas fa-tags
+  Categories: /categories/ || fas fa-folder-open
+  List||fas fa-list:
+    Music: /music/ || fas fa-music
+    Movie: /movies/ || fas fa-video
+  Link: /link/ || fas fa-link
+  About: /about/ || fas fa-heart
 
 # --------------------------------------
 # Code Blocks Settings
@@ -28,11 +33,11 @@ menu:
 
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
-  theme: light
+  theme: darker
   macStyle: false
   # Code block height limit (unit: px)
-  height_limit: false
-  word_wrap: false
+  height_limit: ocean
+  word_wrap: darker
 
   # Toolbar
   copy: true
@@ -45,8 +50,8 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/origin404 || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fab fa-github: https://github.com/origin404 || Github || '#24292e'
+  fas fa-envelope: mailto:2682076246@qq.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
@@ -62,29 +67,28 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: https://t.alcy.cc/ycy
 
 # The banner image of index page
-index_img:
+index_img: https://t.alcy.cc/ycy
 
 # The banner image of archive page
-archive_img:
+archive_img: https://t.alcy.cc/ycy
 
 # Note: tag page, not tags page
-tag_img:
+tag_img: https://t.alcy.cc/ycy
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
 #  - tag name: xxxxx
-tag_per_img:
-
+tag_per_img: https://t.alcy.cc/ycy
 # Note: category page, not categories page
-category_img:
+category_img: https://t.alcy.cc/ycy
 
 # The banner image of category page, you can set the banner image for each category
 # Format:
 #  - category name: xxxxx
-category_per_img:
+category_per_img: https://t.alcy.cc/ycy
 
 # The background image of footer
 footer_img: false
@@ -284,7 +288,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/origin404
   card_announcement:
     enable: true
     content: This is my Blog
@@ -381,10 +385,10 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: true
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
-  start:
-  end:
+  start: 6
+  end: 18
 
 # Show scroll percent in scroll-to-top button
 rightside_scroll_percent: false
@@ -871,12 +875,15 @@ click_heart:
 
 # Mouse click effects: words
 clickShowText:
-  enable: false
-  text:
-    # - I
-    # - LOVE
-    # - YOU
-  fontSize: 15px
+  enable: true
+  text: 
+    - man
+    - !
+    - what
+    - can
+    - i
+    - say
+  fontSize: 30px
   random: false
   mobile: false
 
